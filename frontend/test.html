@@ -24,6 +24,13 @@
 		  -o-background-size: cover;
 		  background-size: cover;
 		}
+		a:link {
+  			text-decoration: none;
+		}
+
+		a:visited {
+		text-decoration: none;
+		}
 	</style>
     <title>QBucket</title>
   </head>
@@ -31,7 +38,7 @@
 	<div class="container-fluid align-items-center">
 		<div class="row p-2">
 			<div class="col-lg-12 col-md-12 col-sm-12" >
-				<h1 class="border border-dark text-center rounded  bg-warning" style="width:50%;margin:0 auto;">Welcome to the QBucket!</h1>	
+				<h1 class="border border-dark text-center rounded  bg-warning" style="width:50%;margin:0 auto;"><a href="index.html" style="color:black">Welcome to the QBucket!</a></h1>	
 			</div>
 		</div>
 		<div id="start" class="row p-2 justify-content-center">
@@ -51,9 +58,9 @@
 				</form>	
 			</div>
 		</div>
-		<div id="test" style="display: none;" class="border row p-2 justify-content-center">
+		<div id="test" style="display: none;" class="row p-2 justify-content-center">
 			<div class="col-lg-12 col-md-12 col-sm-12" >
-				<div class="p-2 bg-warning rounded w-50 border" style="margin:0 auto">
+				<div class="border border-dark p-2 bg-warning rounded w-50" style="margin:0 auto">
 					<div id="quiz"></div>
 					<button id="next" type="button" class="btn btn-dark btn-sm">Next</button>
 					<button id="prev" type="button" class="btn btn-dark btn-sm">Prev</button>

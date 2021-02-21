@@ -153,6 +153,9 @@ function()
           }
         }
         score.append('You scored ' + correct + ' out of ' +allQuestions.length);
+        var atag = $('<a>',{class: 'm-2 text-center btn btn-dark', href:'index.html'});
+        atag.append(' Go home!');
+        score.append(atag);
         return score;
   }
 })();

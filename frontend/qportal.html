@@ -24,14 +24,22 @@
 		  -o-background-size: cover;
 		  background-size: cover;
 		}
+
+		a:link {
+  			text-decoration: none;
+		}
+
+		a:visited {
+		text-decoration: none;
+		}
 	</style>
     <title>QBucket</title>
   </head>
   <body>
 	<div class="container-fluid align-items-center">
 		<div class="row p-2">
-			<div class="col-12" >
-				<h1 class="border border-dark text-center rounded  bg-warning" style="width:50%;margin:0 auto;">Welcome to the QBucket!</h1>	
+			<div class="col-12">
+				<h1 class="border border-dark text-center rounded bg-warning" style="width:50%;margin:0 auto;"><a href="index.html" style="color:black">Welcome to the QBucket!</a></h1>	
 			</div>
 		</div>
 		<div class="row m-3 p-2 justify-content-center">
@@ -39,11 +47,27 @@
 				<form id="qForm">
 				  <div class="form-group">
 					<label for="question">Question:</label>
-					<textarea class="form-control form-contro l-sm" id="question" rows="3"></textarea>
-					<button id="addBut" type="button" class="m-1 btn btn-dark rounded-pill btn-sm" style="display:inline" onclick="addInput()"><i class="fas fa-plus-square"></i> Add input</button>
+					<textarea class="form-control form-control-sm" id="question" rows="3"></textarea>
+					<!-- <button id="addBut" type="button" class="m-1 btn btn-dark rounded-pill btn-sm" style="display:inline" onclick="addInput()"><i class="fas fa-plus-square"></i> Add input</button> -->
 					<p><small>While adding the input, give 4 options, where the first option is the correct answer to the question.</small></p>
+					<div class="form-group">
+						<label for="question">Option 1:</label>
+						<input id="option1"  class="form-control form-control-sm" type="text" placeholder="Correct Option">
+					</div>
+					<div class="form-group">
+						<label for="question">Option 2:</label>
+						<input id="option2"  class="form-control form-control-sm" type="text" placeholder="Wrong Option">
+					</div>
+					<div class="form-group">
+						<label for="question">Option 3:</label>
+						<input id="option3"  class="form-control form-control-sm" type="text" placeholder="Wrong Option">
+					</div>
+					<div class="form-group">
+						<label for="question">Option 4:</label>
+						<input id="option4"  class="form-control form-control-sm" type="text" placeholder="Wrong Option">
+					</div>
 				  </div>
-				  <button type="submit" class="mb-2 btn btn-dark btn-sm">Submit question</button>
+				  <button onclick="changeLocation()" type="submit" class="mb-2 btn btn-dark btn-sm">Submit question</button>
 				</form>
 			</div>
 		</div>
